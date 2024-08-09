@@ -4,13 +4,14 @@ import "./App.css";
 import ChatHistory from "./components/ChatHistory";
 import Loading from "./components/Loading";
 
+
 const App = () => {
   const [userInput, setUserInput] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const genAI = new GoogleGenerativeAI(
-    "AIzaSyAW7zTfa1vBd5tZHa_bu9r02ngzhC2qmAQ"
+"AIzaSyBvQP-nQEtH1GxpxGjjQaQCon4lIKqw1PQ"
   );
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
